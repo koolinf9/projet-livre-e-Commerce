@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - Librairie KJS</title>
+    <link rel="stylesheet" href="./paiement.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <form id="checkout-form" class="checkout-form">
+            <h1>Finaliser votre commande</h1>
+            
+            <div class="form-section">
+                <h2>Informations personnelles</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nom">Nom*</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom*</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Numéro de téléphone*</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Adresse de livraison</h2>
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="adresse">Adresse complète*</label>
+                        <input type="text" id="adresse" name="adresse" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville*</label>
+                        <input type="text" id="ville" name="ville" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Mode de livraison</h2>
+                <div class="livraison-options">
+                    <div class="livraison-option">
+                        <input type="radio" id="express" name="livraison" value="express">
+                        <label for="express">
+                            Livraison 
+                            <span>+ 2000 FCFA</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Récapitulatif de la commande</h2>
+                <div id="panier-recap" class="panier-recap">
+                    <!-- Les articles du panier seront ajoutés dynamiquement ici par JS -->
+                </div>
+                <div class="totaux">
+                    <div class="total-ligne">
+                        <span>Sous-total</span>
+                        <span id="sous-total">0 FCFA</span>
+                    </div>
+                    <div class="total-ligne">
+                        <span>Livraison</span>
+                        <span id="frais-livraison">0 FCFA</span>
+                    </div>
+                    <div class="total-ligne total-final">
+                        <span>Total</span>
+                        <span id="total-commande">0 FCFA</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section paiement-options">
+                <h2>Méthode de paiement</h2>
+                <div class="paiement-methodes">
+                    <div class="paiement-option">
+                        <input type="radio" id="mobile-money" name="paiement" value="mobile-money" required>
+                        <label for="mobile-money">Paiement à la livraison</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-payer">Confirmer la commande</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

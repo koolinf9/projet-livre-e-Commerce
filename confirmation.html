@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Commande - Librairie KJS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .confirmation-container {
+            max-width: 600px;
+            margin: 3rem auto;
+            text-align: center;
+            background-color: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .confirmation-icon {
+            font-size: 5rem;
+            color: #2ecc71;
+            margin-bottom: 1rem;
+        }
+
+        .confirmation-details {
+            margin-top: 2rem;
+            text-align: left;
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .confirmation-actions {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="confirmation-icon">
+            ✓
+        </div>
+        <h1>Merci pour votre commande !</h1>
+        <p>Votre commande a été confirmée avec succès.</p>
+        
+        <div class="confirmation-details">
+            <h3>Détails de la commande</h3>
+            <p><strong>Numéro de commande :</strong> KJS-<span id="numero-commande"></span></p>
+            <p><strong>Date de commande :</strong> <span id="date-commande"></span></p>
+            <p><strong>Montant total :</strong> <span id="montant-total"></span></p>
+            <p><strong>Mode de livraison :</strong> <span id="mode-livraison"></span></p>
+        </div>
+
+        <div class="confirmation-actions">
+            <a href="index.html" class="btn">Retour à l'accueil</a>
+            <a href="#" class="btn" id="telecharger-facture">Télécharger la facture</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Générer un numéro de commande aléatoire
+            const numeroCommande = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('numero-commande').textContent = numeroCommande;
+
+            // Date de commande
+            const dateCommande = new Date();
+            document.getElementById('date-commande').textContent = dateCommande.toLocaleDateString('fr-FR', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            // Récupérer les informations de la commande (à adapter selon votre logique)
+            const montantTotal = localStorage.getItem('total-commande') || '105000.00 FCFA';
+            const modeLivraison = localStorage.getItem('mode-livraison') || 'Standard';
+
+            document.getElementById('montant-total').textContent = montantTotal;
+            document.getElementById('mode-livraison').textContent = modeLivraison;
+
+            // Téléchargement de facture (simulation)
+            document.getElementById('telecharger-facture').addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Fonction de téléchargement de facture à implémenter');
+            });
+        });
+    </script>
+</body>
+</html>
