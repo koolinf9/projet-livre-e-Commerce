@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Mêmes balises meta et liens que la page d'accueil -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le secret de la prospérité - Librairie KJS</title>
+    <link rel="stylesheet" href="./Pproduit.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation identique à la page d'accueil -->
+    
+            <nav class="main-navigation">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo2_kjs.png" alt="Logo Librairie KJS">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Boutique</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./A_propos.html">À propos</a></li>
+                    <li class="search-container">
+                        <input type="search" class="search-input" placeholder="Recherche">
+                    </li>
+                    <li>
+                        <button class="btn account-btn"><a href="./login.html">Compte</a></button>
+                    </li>
+                    <li>
+                        <button class="btn cart-btn">
+                            Panier <span class="cart-count">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ... -->
+        
+    </header>
+
+    <main class="product-detail-page">
+        <section class="product-detail">
+            <div class="product-container">
+                <div class="product-gallery">
+                    <img src="./images/Ricardo Kaniama.jpeg" alt="Couverture du livre" class="main-image">
+                </div>
+                
+                <div class="product-info">
+                    <h1>Le secret de la prospérité</h1>
+                    <p class="author">Auteur : Ricardo Kaniama</p>
+                    <div class="price-container">
+                        <span class="price">36000 FCFA</span>
+                    </div>
+                    
+                  
+                            <!-- Correction de la section des actions produit -->
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="btn add-to-cart" data-product-id="p1"> 
+                            <!-- Ajout de l'attribut data-product-id -->
+                            Ajouter au panier
+                        </button>
+                    </div>
+                    
+                    <div class="product-highlights">
+                        <h3>Ce que vous apprendrez :</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Les principes fondamentaux de la richesse durable</li>
+                            <li><i class="fas fa-check"></i> Stratégies pour développer un état d'esprit prospère</li>
+                            <li><i class="fas fa-check"></i> Méthodes concrètes pour générer des revenus passifs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <h2>Description complète</h2>
+                <p>Dans ce guide transformateur, Ricardo Kaniama dévoile les stratégies éprouvées qui ont permis à des milliers de personnes d'atteindre l'indépendance financière. À travers des études de cas réelles et des exercices pratiques, vous découvrirez comment :</p>
+                <ul>
+                    <li>Reprogrammer votre mentalité financière</li>
+                    <li>Identifier les opportunités invisibles</li>
+                    <li>Construire un patrimoine générationnel</li>
+                </ul>
+            </div>
+
+            <div class="author-bio">
+                <h2>À propos de l'auteur</h2>
+                <div class="bio-content">
+                    <img src="./images/ricardo-portrait.jpg" alt="Ricardo Kaniama">
+                    <p>Ricardo Kaniama, expert en développement personnel et coach financier reconnu internationalement, partage 15 ans d'expérience dans l'éducation financière. Ses méthodes ont été adoptées par plus de 50 000 personnes à travers l'Afrique francophone.</p>
+                </div>
+            </div>
+
+            <section class="reviews">
+                <h2>Avis clients (4.8/5)</h2>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="rating">★★★★☆</span>
+                        <span class="reviewer">Marie D.</span>
+                    </div>
+                    <p>"Ce livre a changé ma vision de l'argent. Les exercices pratiques sont vraiment applicables au contexte africain."</p>
+                </div>
+                <!-- Plus d'avis -->
+            </section>
+        </section>
+    </main>
+
+    
+        <!-- Même footer que la page d'accueil -->
+         
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <address>
+                    00225 BP Korhogo<br>
+                    Teguére, R A 001, CI<br>
+                    Tél: +225 01 01 15 06 00<br>
+                    Email: contact@kjs.ci
+                </address>
+                <div class="social-links">
+                    <h4>Réseaux sociaux</h4>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="useful-links">
+                <h4>Nos liens utiles</h4>
+                <ul>
+                    <li><a href="./A_propos.html">À propos</a></li>
+                    <li><a href="./index.html">Boutique</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4>Abonnez-vous à notre newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit" class="btn">S'abonner</button>
+                </form>
+            </div>
+        </div>
+        <div >
+            <p>© 2024 Univer.Cachés_Librairie_kjs. Tous droits réservés</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const cartCount = document.querySelector('.cart-count');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartBtn = document.querySelector('.cart-btn');
+    const cartModal = createCartModal();
+    let cartItems = [];
+
+    // Show toast message
+    function showToast(message) {
+        const toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 300);
+            }, 2000);
+        }, 10);
+    }
+     // Add item to cart
+     function addToCart(product) {
+        cartItems.push(product);
+        updateCartDisplay();
+        showToast('Article ajouté dans le panier !');
+    }
+
+    // Update cart display
+    function updateCartDisplay() {
+        const cartItemsContainer = cartModal.querySelector('.cart-items-container');
+        const cartTotalSpan = cartModal.querySelector('.total-price');
+        
+        // Clear previous items
+        cartItemsContainer.innerHTML = '';
+        
+        // Calculate total
+        let total = 0;
+        
+        // Populate cart items
+        cartItems.forEach((item, index) => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item');
+            itemElement.innerHTML = `
+                <img src="${item.image}" alt="${item.title}">
+                <div class="cart-item-details">
+                    <h3>${item.title}</h3>
+                    <p>${item.price}</p>
+                    <button class="btn btn-remove" data-index="${index}">Supprimer</button>
+                </div>
+            `;
+            cartItemsContainer.appendChild(itemElement);
+            
+            // Parse price and add to total
+            total += parseFloat(item.price.replace(' FCFA', ''));
+        });
+
+
+        // Update cart count and total
+        cartCount.textContent = cartItems.length;
+        cartTotalSpan.textContent = `${total.toFixed(2)} FCFA`;
+
+        // Add remove item functionality
+        const removeButtons = cartItemsContainer.querySelectorAll('.btn-remove');
+        removeButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const index = e.target.getAttribute('data-index');
+                cartItems.splice(index, 1);
+                updateCartDisplay();
+            });
+        });
+    }
+
+    // Add to cart event listeners
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Get product details from the card
+            const productCard = button.closest('.product-card');
+            const product = {
+                title: productCard.querySelector('h3').textContent,
+                price: productCard.querySelector('.price').textContent,
+                image: productCard.querySelector('img').src
+            };
+            
+            addToCart(product);
+        });
+    });
+
+    // Cart modal toggle
+    cartBtn.addEventListener('click', () => {
+        cartModal.classList.toggle('show-modal');
+    });
+
+    // Close modal when clicking outside or on close button
+    cartModal.addEventListener('click', (e) => {
+        if (e.target === cartModal || e.target.classList.contains('cart-close-btn')) {
+            cartModal.classList.remove('show-modal');
+        }
+    });
+
+    // Checkout button (placeholder)
+    const checkoutBtn = cartModal.querySelector('.btn-checkout');
+    checkoutBtn.addEventListener('click', () => {
+        // Rediriger vers la page de paiement
+        window.location.href = 'paiement.html';
+    });
+});
+        // Dans script.js
+class Cart {
+    constructor() {
+        this.items = JSON.parse(localStorage.getItem('cart')) || [];
+        this.updateCount();
+    }
+
+    addItem(productId, quantity) {
+        const existingItem = this.items.find(item => item.id === productId);
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            this.items.push({ id: productId, quantity });
+        }
+        this.save();
+    }
+
+    save() {
+        localStorage.setItem('cart', JSON.stringify(this.items));
+        this.updateCount();
+    }
+
+    updateCount() {
+        const count = this.items.reduce((acc, item) => acc + item.quantity, 0);
+        document.querySelectorAll('.cart-count').forEach(el => el.textContent = count);
+    }
+}
+
+const cart = new Cart();
+
+// Gestion de la quantité
+document.querySelectorAll('.qty-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const input = button.parentElement.querySelector('.qty-input');
+        let value = parseInt(input.value);
+        
+        if (button.classList.contains('plus')) {
+            value++;
+        } else {
+            value = Math.max(1, value - 1);
+        }
+        
+        input.value = value;
+    });
+});
+
+// Ajout au panier
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        const productId = button.dataset.productId;
+        const quantity = parseInt(button.parentElement.querySelector('.qty-input').value);
+        
+        cart.addItem(productId, quantity);
+        showNotification('Produit ajouté au panier !');
+    });
+});
+
+
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'cart-notification';
+    notification.textContent = message;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 2000);
+}
+ 
+
+    </script>
+</body>
+</html>
+ 
